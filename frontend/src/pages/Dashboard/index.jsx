@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import NGODashboard from './NGODashboard';
 import DONORDashboard from './DONORDashboard';
-import Compaign from './Compaign';
+import Campaign from './Campaign';
 
 function Dashboard() {
     const user = JSON.parse(localStorage.getItem("user") || "{}");
@@ -22,7 +22,7 @@ function Dashboard() {
 
             <Route path="NGODashboard" element={<NGODashboard />} />
             <Route path="DONORDashboard" element={<DONORDashboard />} />
-            <Route path="Compaign" element={<Compaign />} />
+            <Route path="Campaign" element={<Campaign />} />
         </Routes>
     );
 }
