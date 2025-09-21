@@ -13,6 +13,7 @@ function ActiveCampaigns() {
     const fetchCampaigns = async () => {
         try {
             const res = await axios.get('http://localhost:5000/api/campaigns'); // Backend endpoint
+            console.log("API Response:", res.data);
             if (res.data.success) {
                 setCampaigns(res.data.data);
             }
