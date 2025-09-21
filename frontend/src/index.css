@@ -1,0 +1,33 @@
+@import "tailwindcss";
+/* Base style for all toasts */
+.custom-toast {
+  background: #ffffff !important;              /* white background */
+  color: #1f2937 !important;                  /* dark gray text */
+  border: 1px solid #e5e7eb !important;       /* light border */
+  border-radius: 10px !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08) !important;
+  padding: 12px 16px !important;
+  font-size: 14px !important;
+  line-height: 1.4 !important;
+}
+
+/* Close button */
+.custom-toast .Toastify__close-button {
+  color: #6b7280 !important;
+}
+
+/* Accent border by type */
+.success-toast {
+  border-left: 4px solid #16a34a !important; /* green */
+}
+.error-toast {
+  border-left: 4px solid #dc2626 !important; /* red */
+}
+.info-toast {
+  border-left: 4px solid #2563eb !important; /* blue */
+}
+
+/* Progress bar color subtle */
+.Toastify__progress-bar {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
